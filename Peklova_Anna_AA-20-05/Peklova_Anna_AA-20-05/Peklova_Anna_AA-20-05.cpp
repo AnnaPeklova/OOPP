@@ -10,8 +10,8 @@ void menu()
 
 	cout << "1.Ввести название фильма/сериала" << endl;
 	cout << "2.Вывести список на экран" << endl;
-	cout << "3.Вывести список в файл" << endl;
-	cout << "4.Cчитать список из файла" << endl;
+	cout << "3.Cчитать список из файла" << endl;
+	cout << "4.Вывести список в файл" << endl;
 	cout << "5.Удалить список" << endl;
 	cout << "6.Выход" << endl;
 }
@@ -32,7 +32,7 @@ int main()
 		case 1:
 		{
 			class_films.input_film_by_console();
-			break;
+			break ;
 		}
 		case 2:
 		{

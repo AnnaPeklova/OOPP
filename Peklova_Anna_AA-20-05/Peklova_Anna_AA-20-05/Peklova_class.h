@@ -8,7 +8,7 @@ class Peklova_class
 {
 public:
 	string name;
-	int kinokartina;
+	string kinokartina;
 	void input_film_by_console();
 	void show_film();
 	void insert_into_file(ofstream& outfile);
