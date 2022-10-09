@@ -1,18 +1,14 @@
 #pragma once
-#include <afx.h>
-#include <string>
-#include <vector>
-#include <memory>
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
-class Peklova_class :public CObject
+class Peklova_class
 {
-protected:
-	CString name;
-	int age;
 public:
-	
+	string name;
+	int age;
 	void input_film_by_console();
 	void show_film();
 	void insert_into_file(ofstream& outfile);

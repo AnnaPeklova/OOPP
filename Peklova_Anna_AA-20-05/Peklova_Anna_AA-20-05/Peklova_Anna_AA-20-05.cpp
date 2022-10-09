@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include <fstream>
 #include "Peklova_contclass.h"
-#include "Peklova_desc.h"
 
 using namespace std;
 
@@ -20,7 +19,6 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	Peklova_contclass class_films;
-	Peklova_desc short_film;
 	while (true)
 	{
 		menu();
@@ -78,4 +76,3 @@ int main()
 	}
 
 }
-
