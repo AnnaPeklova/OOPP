@@ -6,7 +6,6 @@ using namespace std;
 
 void menu()
 {
-
 	cout << "1.Ввести название фильма/сериала" << endl;
 	cout << "2.Вывести список на экран" << endl;
 	cout << "3.Cчитать список из файла" << endl;

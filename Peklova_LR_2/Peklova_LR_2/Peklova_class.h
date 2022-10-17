@@ -1,16 +1,21 @@
 #pragma once
-#include <iostream>
-#include <fstream>
+#include <afx.h>
+#include <string>
+#include <vector>
+#include <memory>
 
 using namespace std;
 
-class Peklova_class
+class Peklova_class : public CObject
 {
+protected:
+	CString name;
+	int census;
 public:
-	string name;
-	int age;
-	void input_film_by_console();
-	void show_film();
-	void insert_into_file(ofstream& outfile);
-	void load_from_file(ifstream& infile);
+	DECLARE_SERIAL(Peklova_class);
+	Peklova_class() {};
+	virtual ~Peklova_class() {};
+	virtual void input_film_by_console();
+	virtual void show_film();
+	virtual void Serialize(CArchive& ar);
 };

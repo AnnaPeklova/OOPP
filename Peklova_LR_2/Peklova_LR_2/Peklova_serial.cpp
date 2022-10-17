@@ -1,13 +1,14 @@
 #include "pch.h"
-#include "afxwin.h"
-#include "Peklova_class.h"
+#include "Peklova_serial.h"
 
 using namespace std;
 
-IMPLEMENT_SERIAL(Peklova_class, CObject, 0);
+IMPLEMENT_SERIAL(Peklova_serial, Peklova_class, VERSIONABLE_SCHEMA | 0);
 
-void Peklova_class::input_film_by_console()
+void Peklova_serial::input_film_by_console()
 {
+	cout << endl;
+	Peklova_class::input_film_by_console();
 	cout << "Введите название: ";
 	std::string name1;
 	cin >> name1;
@@ -16,13 +17,15 @@ void Peklova_class::input_film_by_console()
 	cin >> census;
 }
 
-void Peklova_class::show_film()
+void Peklova_serial::show_film()
 {
+	Peklova_class::show_film();
 	cout << "Название: " << name << endl << "Возрастное ограничение: " << census << endl;
 }
 
-void Peklova_class::Serialize(CArchive& ar)
+void Peklova_serial::Serialize(CArchive& ar)
 {
+	Peklova_class::Serialize(ar);
 	if (ar.IsStoring())
 	{
 		ar << name << census;

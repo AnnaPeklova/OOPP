@@ -151,24 +151,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_class.h" />
-    <ClInclude Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_contclass.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Peklova_class.h" />
+    <ClInclude Include="Peklova_contclass.h" />
     <ClInclude Include="Peklova_LR_2.h" />
+    <ClInclude Include="Peklova_serial.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_class.cpp" />
-    <ClCompile Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_contclass.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Peklova_class.cpp" />
+    <ClCompile Include="Peklova_contclass.cpp" />
     <ClCompile Include="Peklova_LR_2.cpp" />
+    <ClCompile Include="Peklova_serial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Peklova_LR_2.rc" />

@@ -30,11 +30,14 @@
     <ClInclude Include="pch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_class.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="Peklova_class.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_contclass.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="Peklova_contclass.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Peklova_serial.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -44,10 +47,13 @@
     <ClCompile Include="pch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_class.cpp">
+    <ClCompile Include="Peklova_contclass.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Peklova_Anna_AA-20-05\Peklova_Anna_AA-20-05\Peklova_contclass.cpp">
+    <ClCompile Include="Peklova_class.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Peklova_serial.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
