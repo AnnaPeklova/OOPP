@@ -20,9 +20,20 @@ CWinApp theApp;
 
 using namespace std;
 
+
+string getUserFilename()
+{
+	string fn;
+	cout << "Введите название файла с расширением: ";
+	cin.ignore();
+	getline(cin, fn);
+
+	return fn;
+}
+
 void menu()
 {
-    cout << "1.Ввести название фильма/сериала" << endl;
+    cout << "1.Ввести название" << endl;
     cout << "2.Вывести список на экран" << endl;
     cout << "3.Cчитать список из файла" << endl;
     cout << "4.Вывести список в файл" << endl;
@@ -70,13 +81,13 @@ int main()
 				}
 				case 3:
 				{
-					class_films.load_from_file();
+					class_films.load_from_file(CString(getUserFilename().c_str()));
 					system("pause");
 					break;
 				}
 				case 4:
 				{
-					class_films.insert_into_file();
+					class_films.insert_into_file(CString(getUserFilename().c_str()));
 					system("pause");
 					break;
 				}

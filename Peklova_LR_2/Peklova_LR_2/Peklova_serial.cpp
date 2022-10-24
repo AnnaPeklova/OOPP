@@ -8,9 +8,8 @@ IMPLEMENT_SERIAL(Peklova_serial, Peklova_class, VERSIONABLE_SCHEMA | 0);
 void Peklova_serial::input_film_by_console()
 {
 	cout << endl;
-	Peklova_class::input_film_by_console();
 	cout << "Введите название: ";
-	std::string name1;
+	string name1;
 	cin >> name1;
 	name = name1.c_str();
 	cout << "Введите возрастное ограничение: ";
@@ -19,7 +18,7 @@ void Peklova_serial::input_film_by_console()
 
 void Peklova_serial::show_film()
 {
-	Peklova_class::show_film();
+	std::string s((LPCTSTR)name);
 	cout << "Название: " << name << endl << "Возрастное ограничение: " << census << endl;
 }
 

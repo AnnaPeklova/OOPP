@@ -9,7 +9,7 @@ IMPLEMENT_SERIAL(Peklova_class, CObject, 0);
 void Peklova_class::input_film_by_console()
 {
 	cout << "Введите название: ";
-	std::string name1;
+	string name1;
 	cin >> name1;
 	name = name1.c_str();
 	cout << "Введите возрастное ограничение: ";

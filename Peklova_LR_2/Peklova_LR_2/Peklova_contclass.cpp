@@ -39,9 +39,9 @@ void Peklova_contclass::delete_films()
 	else cout << "Вы не ввели ни одного фильма!" << endl;
 }
 
-void Peklova_contclass::insert_into_file()
+void Peklova_contclass::insert_into_file(CString file)
 {
-	CFile f("f.dat", CFile::modeCreate | CFile::modeWrite);
+	CFile f(file, CFile::modeCreate | CFile::modeWrite);
 	CArchive ar(&f, CArchive::store);
 	ar << films.size();
 	for (auto film : films)
@@ -51,9 +51,9 @@ void Peklova_contclass::insert_into_file()
 }
 
 
-void Peklova_contclass::load_from_file()
+void Peklova_contclass::load_from_file(CString file)
 {
-	CFile f("f.dat", CFile::modeRead);
+	CFile f(file, CFile::modeRead);
 	CArchive ar(&f, CArchive::load);
 	int hotels_count;
 	ar >> hotels_count;
